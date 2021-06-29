@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+}
+
+.sidebar {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(216, 216, 216);
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.product-item {
+  padding: 20px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-item:hover {
+  box-shadow: rgba(100, 100, 111, 0.4) 2px 2px 15px 0px;
+  cursor: pointer;
+}
+
+.product-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.product-price {
+  margin-top: auto;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.btn-cart-add {
+  align-self: flex-start;
+  appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #aaa;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.7rem;
+  transition: 250ms background-color ease, 250ms color ease;
+}
+
+.product-item:hover .btn-cart-add {
+  background-color: black;
+  color: white;
+}
+
+/* Cart */
+.product-cart-item {
+  display: flex;
+  margin: 30px 0;
+  border-top: 1px solid #aaa;
+  padding-top: 20px;
+}
+
+.product-cart-presentation {
+  width: 150px;
+  overflow: hidden;
+  height: 150px;
+  display: flex;
+  margin-right: 20px;
+  justify-content: center;
+}
+
+.product-cart-img {
+  height: 100%;
+}
+
+.product-cart-title {
+  margin: 0 0 20px 0;
+}
+
+.product-cart-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-cart-price {
+  margin-top: auto;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.product-cart-amount {
+  margin-bottom: 10px;
+}
+
+.product-cart-remove-btn {
+  align-self: flex-start;
+  cursor: pointer;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #b30000;
+  color: #b30000;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  transition: 250ms background-color ease, 250ms color ease;
+}
+
+.product-cart-remove-btn:hover,
+.product-cart-remove-btn:focus-visible {
+  background-color: #b30000;
+  color: white;
+}
