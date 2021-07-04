@@ -7,6 +7,7 @@ body {
   width: 100%;
   background-color: rgb(216, 216, 216);
   margin-bottom: 30px;
+  position: relative;
 }
 
 .container {
@@ -117,4 +118,14 @@ body {
 .product-cart-remove-btn:focus-visible {
   background-color: #b30000;
   color: white;
+}
+
+.currency-wrapper {
+  margin: auto 20px;
+  height: 26px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
